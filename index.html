@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEFAS Yatırım Fonları Analizi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Üst Navigasyon -->
+    <nav class="top-nav">
+        <div class="nav-left">
+            <div class="logo">
+                <span class="logo-text">Fon Detay</span>
+                <span class="logo-subtitle">Analytics Hub</span>
+            </div>
+        </div>
+        <div class="nav-center">
+            <a href="#" class="nav-link active">Top Performers</a>
+            <a href="#" class="nav-link">Investor Growth</a>
+            <a href="#" class="nav-link">News Center</a>
+            <a href="#" class="nav-link">More</a>
+        </div>
+        <div class="nav-right">
+            <span class="live-data">Live Data</span>
+            <button class="watchlist-btn">Watchlist</button>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Ana Başlık -->
+        <header>
+            <h1>En İyi Performans Gösteren Fonlar</h1>
+        </header>
+
+        <!-- Yatırımcı Sayısı Değişimi Kartları -->
+        <section class="investor-cards-section">
+            <div class="section-title">
+                <span class="icon">👥</span>
+                <h2>Yatırımcı Sayısı Değişimi</h2>
+            </div>
+            <div class="investor-cards" id="investor-cards">
+                <!-- Kartlar JavaScript ile doldurulacak -->
+            </div>
+        </section>
+
+        <!-- Kategori Filtreleri -->
+        <section class="category-filters-section">
+            <div class="section-title">
+                <span class="icon">🔍</span>
+                <h2>Kategori Filtresi</h2>
+            </div>
+            <div class="category-filters" id="category-filters">
+                <!-- Filtreler JavaScript ile doldurulacak -->
+            </div>
+        </section>
+
+        <!-- Arama ve Sıralama -->
+        <div class="search-sort-bar">
+            <div class="search-container">
+                <input type="text" id="search-input" class="search-input" placeholder="Fon kodu veya adı ile ara...">
+            </div>
+            <div class="sort-download">
+                <button id="sort-toggle" class="sort-dropdown">
+                    <span>Günlük Getiri</span>
+                    <span class="sort-icon">↕</span>
+                </button>
+                <button class="download-btn" title="İndir">⬇</button>
+            </div>
+        </div>
+
+        <!-- Ana Fon Performans Tablosu -->
+        <section class="card">
+            <div class="table-container">
+                <table id="performance-table" class="data-table">
+                    <thead>
+                        <tr>
+                            <th><input type="checkbox" id="select-all"></th>
+                            <th>FON KODU / ADI</th>
+                            <th>KATEGORI</th>
+                            <th>GÜNLÜK</th>
+                            <th>HAFTALIK</th>
+                            <th>AYLIK</th>
+                            <th>YILLIK</th>
+                            <th>TOPLAM DEĞER</th>
+                            <th>RİSK</th>
+                            <th>İŞLEMLER</th>
+                        </tr>
+                    </thead>
+                    <tbody id="performance-tbody">
+                        <!-- Veriler JavaScript ile doldurulacak -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Küresel Finans Haberleri -->
+        <section class="card">
+            <div class="card-header">
+                <h2>Küresel Finans Haberleri</h2>
+            </div>
+            <div id="news-container" class="news-container">
+                <!-- Haberler JavaScript ile doldurulacak -->
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
